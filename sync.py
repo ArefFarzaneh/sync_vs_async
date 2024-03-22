@@ -7,8 +7,8 @@ start = time.time()
 conn = mysql.connector.connect(
     host="localhost",
     user="aref",
-    password="EAsport1369",
-    database="grafana"
+    password="passwd",
+    database="database"
 )
 with conn.cursor() as cursor:
     cursor.execute('SHOW TABLES')

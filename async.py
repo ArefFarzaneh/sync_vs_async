@@ -7,8 +7,8 @@ async def read_data(table_name):
     conn = await aiomysql.connect(
         host="localhost",
         user="aref",
-        password="EAsport1369",
-        db="grafana"
+        password="passwd",
+        db="database"
     )
     async with conn.cursor() as cursor:
         await cursor.execute(f'select * from {table_name}')
@@ -18,8 +18,8 @@ async def main():
     conn = await aiomysql.connect(
         host="localhost",
         user="aref",
-        password="EAsport1369",
-        db="grafana"
+        password="passwd",
+        db="database"
     )
 
     async with conn.cursor() as cursor:
