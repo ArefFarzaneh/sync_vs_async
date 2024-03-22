@@ -26,13 +26,13 @@ To run the code and compare the runtime performance:
 3. Run the async version of the code:
 
     ```bash
-    python async_version.py
+    python async.py
     ```
 
 4. Run the sync version of the code:
 
     ```bash
-    python sync_version.py
+    python sync.py
     ```
 
 5. Compare the runtime performance of both versions.
